@@ -17,11 +17,12 @@ const Proyectos = () => {
     }, [])
 
     return ( 
+      <>
+        <Barra />
         <div className="contenedor-app">
             <Sidebar />
 
             <div className="seccion-principal">
-                <Barra />
 
                 <main>
                     <FormTarea />
@@ -32,6 +33,7 @@ const Proyectos = () => {
                 </main>
             </div>
         </div>
+      </>
      );
 }
  

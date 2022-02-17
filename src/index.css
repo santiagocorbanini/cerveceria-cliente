@@ -27,7 +27,7 @@ body {
 h1, h2 {
   font-family: var(--headingFont);
   font-weight: 900;
-  margin: 0 0 4rem 0;
+  margin: 0 0 3rem 0;
   text-align: center;
   color: var(--gris2);
 }
@@ -125,7 +125,7 @@ aside  {
   color: var(--gris2);
 }
 .proyectos {
-  margin-top: 10rem;
+  margin-top: 3rem;
 }
 .listado-proyectos li {
   margin-bottom: 2rem;
@@ -141,7 +141,7 @@ aside  {
   justify-content: space-between;
   align-items: center;
   background-color: var(--gris2);
-  padding: 4rem;
+  padding: 2rem;
 }
 .nombre-usuario {
   color: var(--blanco);
@@ -221,7 +221,6 @@ aside  {
 }
 .tarea p {
   font-size: 1.6rem;
-  flex: 1;
   padding-right: 2rem;
 }
 .tarea .btn {

@@ -40,6 +40,8 @@ const Tarea = ({tarea}) => {
     return ( 
         <li className="tarea sombra">
             <p>{tarea.nombre} </p>
+            <p>$ {tarea.precio} </p>
+            <p>Stock: {tarea.stock} </p>
 
             <div className="estado">
                 {tarea.estado 
@@ -49,7 +51,7 @@ const Tarea = ({tarea}) => {
                             type="button"
                             className="completo"
                             onClick={() => cambiarEstado(tarea)}
-                        >Completo</button>
+                        >Visible</button>
                     )
                 : 
                     (
@@ -57,7 +59,7 @@ const Tarea = ({tarea}) => {
                             type="button"
                             className="incompleto"
                             onClick={() => cambiarEstado(tarea)}
-                        >Incompleto</button>
+                        >No visible</button>
                     )
                 }
             </div>
