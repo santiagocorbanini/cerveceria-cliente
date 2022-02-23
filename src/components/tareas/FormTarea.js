@@ -20,18 +20,22 @@ const FormTarea = () => {
             guardarTarea({
                 nombre: '',
                 stock: '',
-                precio: ''
+                precio: '',
+                imagen: ''
             })
         }
     }, [  tareaseleccionada]); 
 
     // State del formulario
     const [tarea, guardarTarea] = useState({
-        nombre: ''
+        nombre: '',
+        stock: '',
+        precio: '',
+        imagen: ''
     })
 
     // extraer el nombre del proyecto
-    const { nombre, stock, precio } = tarea;
+    const { nombre, stock, precio, imagen } = tarea;
 
     // Si no hay proyecto seleccionado
     if(!proyecto) return null;
@@ -75,7 +79,8 @@ const FormTarea = () => {
         guardarTarea({
             nombre: '',
             stock: '',
-            precio: ''
+            precio: '',
+            imagen: ''
         })
     }
 
@@ -93,7 +98,16 @@ const FormTarea = () => {
                         value={nombre}
                         onChange={handleChange}
                     />
-
+                </div>
+                <div className="contenedor-input">
+                    <input 
+                        type="text"
+                        className="input-text"
+                        placeholder="URL de la imagen..."
+                        name="imagen"
+                        value={imagen}
+                        onChange={handleChange}
+                    />
                 </div>
                 <div className="contenedor-input">
                     <input 
