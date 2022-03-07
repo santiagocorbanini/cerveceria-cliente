@@ -93,10 +93,11 @@ const Login = (props) => {
                         <input type="submit" className="btn btn-primario btn-block" value="Iniciar Sesión" />
                     </div>
                 </form>
-
+                {/* COMENTO ASI NO SE CREAN NUEVAS CUENTAS
                 <Link to={'/nueva-cuenta'} className="enlace-cuenta">
                     Obtener Cuenta
                 </Link>
+                */}
             </div>
         </div>
      );
